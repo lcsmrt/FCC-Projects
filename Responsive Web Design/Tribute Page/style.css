@@ -1,0 +1,48 @@
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-image: url("udybkgpc.png");
+  background-size: cover;
+}
+
+#main {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 15px;
+}
+
+#title {
+  font-size: 45px;
+}
+
+#subtitle {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+#image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+#tribute-info h2 {
+  font-size: 30px;
+  margin: 50px 0;
+}
+
+#tribute-info ul {
+  text-align: left;
+  margin: auto;
+  max-width: 600px;
+  list-style: square;
+}
+
+#tribute-info ul li {
+  margin: 15px 0;
+}
+
+#udyrquote {
+  font-style: italic;
+  margin: 70px 0;
+}
