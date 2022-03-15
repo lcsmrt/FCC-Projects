@@ -1,52 +1,136 @@
 <!DOCTYPE html>
   <html>
-    <header>
-      <title>Survey Form</title>
+    <head>
+      <title>Science Trust Level - Survey Form</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="">
       <meta name="author" content="Lucas Alves Martins Silva">
-    </header>
+    </head>
 
-    <body>
-      <h1 id="title">title</h1>
-      <p id="description">description</p>
-      <hr>
+     <body>
+      <h1 id="title">Science Trust Level Survey</h1>
+      <p id="description">Thank you for taking the time to complete this survey.</p><hr>
 
       <form id="survey-form">
         <div class="form-group">
           <label id="name-label" for="name">Name</label>
-          <input id="name" type="text" name="name" placeholder="Enter your name" required></input>
+          <input id="name" type="text" name="name" placeholder="Enter your name..." required></input>
         </div>
 
         <div class="form-group">
           <label id="email-label" for="email">E-mail</label>
-          <input id="email" type="email" name="email" placeholder="Enter your E-mail" required></input>
+          <input id="email" type="email" name="email" placeholder="Enter your e-mail..." required></input>
         </div>
 
         <div class="form-group">
-          <label id="number-label" for="number">Number</label>
-          <input id="number" type="number" name="number" placeholder="Number" min="4" max="150" required></input>
+          <label id="number-label" for="number">Age</label>
+          <input id="number" type="number" name="number" placeholder="Your age" min="6" max="150" required></input>
         </div>
 
         <div class="form-group">
-          <label id="dropdown-label" for="dropdown">Dropdown</label>
+          <label id="dropdown-label" for="dropdown">Education</label>
           <select id="dropdown" name="dropdown">
             <option value=""></option>
-            <option value="option01">Option 01</option>
-            <option value="option02">Option 02</option>
-            <option value="option03">Option03</option>
+            <option value="incomplete high school">Incomplete High School</option>
+            <option value="high school">High School</option>
+            <option value="incomplete college">Incomplete College</option>
+            <option value="college degree">College Degree</option>
+            <option value="masters degree">Master's Degree</option>
+            <option value="phd">Ph.D.</option>
           </select>
+        </div>
+
+        <p>Mark the option that best describes what you think about the following statements:</p>
+
+        <div class="form-group">
+          <label id="radios-label" for="radiogroup">The universe is ~13 billion years old.</label>
+          <input id="radio01" type="radio" value="1" name="radiogroup">
+          <label for="radio01">Strongly Agree</label>
+          <input id="radio02" type="radio" value="2" name="radiogroup">
+          <label for="radio02">Agree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Neutral</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Disagree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Strongly Disagree</label>
+        </div>
+
+        <div class="form-group">
+          <label id="radiogroup-label-02" for="radiogroup">Astronauts went to the moon.</label>
+          <input id="radio01" type="radio" value="1" name="radiogroup">
+          <label for="radio01">Strongly Agree</label>
+          <input id="radio02" type="radio" value="2" name="radiogroup">
+          <label for="radio02">Agree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Neutral</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Disagree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Strongly Disagree</label>
+        </div>
+
+        <div class="form-group">
+          <label id="radiogroup-label-02" for="radiogroup">The Earth is spherical.</label>
+          <input id="radio01" type="radio" value="1" name="radiogroup">
+          <label for="radio01">Strongly Agree</label>
+          <input id="radio02" type="radio" value="2" name="radiogroup">
+          <label for="radio02">Agree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Neutral</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Disagree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Strongly Disagree</label>
+        </div>
+
+        <div class="form-group">
+          <label id="radiogroup-label-03" for="radiogroup">Climate change is real.</label>
+          <input id="radio01" type="radio" value="1" name="radiogroup">
+          <label for="radio01">Strongly Agree</label>
+          <input id="radio02" type="radio" value="2" name="radiogroup">
+          <label for="radio02">Agree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Neutral</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Disagree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Strongly Disagree</label>
+        </div>
+
+        <div class="form-group">
+          <label id="radiogroup-label-04" for="radiogroup">Humans and monkeys have a common ancestor.</label>
+          <input id="radio01" type="radio" value="1" name="radiogroup">
+          <label for="radio01">Strongly Agree</label>
+          <input id="radio02" type="radio" value="2" name="radiogroup">
+          <label for="radio02">Agree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Neutral</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Disagree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Strongly Disagree</label>
+        </div>
+
+        <div class="form-group">
+          <label id="radiogroup-label-05" for="radiogroup">Vaccines work and are safe.
+          <input id="radio01" type="radio" value="1" name="radiogroup">
+          <label for="radio01">Strongly Agree</label>
+          <input id="radio02" type="radio" value="2" name="radiogroup">
+          <label for="radio02">Agree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Neutral</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Disagree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Strongly Disagree</label>
+        </label>
         </div>
         
         <div class="form-group">
-          <label id="radiogroup-label" for="radiogroup">Radio Buttons</label>
-          <input id="radio01" type="radio" value="1" name="radiogroup">
-          <label for="radio01">Radio01</label>
-          <input id="radio02" type="radio" value="2" name="radiogroup">
-          <label for="radio02">Radio02</label>
-          <input id="radio03" type="radio" value="3" name="radiogroup">
-          <label for="radio03">Radio03</label>
+          <label id="textarea-label" for="textarea">If you have any doubts or sugestions you can send us a message.</label>
+          <textarea id="textarea" name="textarea" placeholder="Enter your message..."></textarea>
         </div>
         
         <div class="form-group">
@@ -55,15 +139,8 @@
           <label for="checkbox01">CheckBox01</label>
           <input id="checkbox02" type="checkbox" value="2" name="checkboxes">
           <label for="checkbox02">CheckBox02</label>
-          <input id="checkbox03" type="checkbox" value="3" name="checkboxes">
-          <label for="checkbox03">CheckBox03</label>
         </div>
-        
-        <div class="form-group">
-          <label id="textarea-label" for="textarea">Text Area</label>
-          <textarea id="textarea" name="textarea" placeholder="Type some text"></textarea>
-        </div>
-        
+
         <div class="form-group">
           <button id="submit" type="submit">Submit</button>
         </div>
