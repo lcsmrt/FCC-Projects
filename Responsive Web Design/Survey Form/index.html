@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Science Trust Level - Survey Form</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="Lucas Alves Martins Silva">
-    </head>
+<html>
+  <head>
+    <title>Science Trust Level - Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Lucas Alves Martins Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-     <body>
-      <h1 id="title">Science Trust Level Survey</h1>
-      <p id="description">Thank you for taking the time to complete this survey.</p><hr>
-
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Science Trust Level Survey</h1>
+        <p id="description">Thank you for taking the time to complete this survey.</p><hr>
+      </header>
+  
       <form id="survey-form">
         <div class="form-group">
           <label id="name-label" for="name">Name</label>
-          <input id="name" type="text" name="name" placeholder="Enter your name..." required></input>
+          <input id="name" class="form-field" type="text" name="name" placeholder="Enter your name..." required></input>
         </div>
-
+  
         <div class="form-group">
           <label id="email-label" for="email">E-mail</label>
-          <input id="email" type="email" name="email" placeholder="Enter your e-mail..." required></input>
+          <input id="email" class="form-field" type="email" name="email" placeholder="Enter your e-mail..." required></input>
         </div>
-
+  
         <div class="form-group">
           <label id="number-label" for="number">Age</label>
-          <input id="number" type="number" name="number" placeholder="Your age" min="6" max="150" required></input>
+          <input id="number" class="form-field" type="number" name="number" placeholder="Enter your age..." min="6" max="150" required></input>
         </div>
-
+  
         <div class="form-group">
           <label id="dropdown-label" for="dropdown">Education</label>
-          <select id="dropdown" name="dropdown">
+          <select id="dropdown" class="form-field" name="dropdown">
             <option value=""></option>
             <option value="incomplete high school">Incomplete High School</option>
             <option value="high school">High School</option>
@@ -40,11 +45,11 @@
             <option value="phd">Ph.D.</option>
           </select>
         </div>
-
+  
         <p>Mark the option that best describes what you think about the following statements:</p>
-
+  
         <div class="form-group">
-          <label id="radios-label" for="radiogroup">The universe is ~13 billion years old.</label>
+          <p>The universe is ~13 billion years old.</p>
           <input id="radio01" type="radio" value="1" name="radiogroup">
           <label for="radio01">Strongly Agree</label>
           <input id="radio02" type="radio" value="2" name="radiogroup">
@@ -56,9 +61,9 @@
           <input id="radio03" type="radio" value="3" name="radiogroup">
           <label for="radio03">Strongly Disagree</label>
         </div>
-
+  
         <div class="form-group">
-          <label id="radiogroup-label-02" for="radiogroup">Astronauts went to the moon.</label>
+          <p>Astronauts went to the moon.</p>
           <input id="radio01" type="radio" value="1" name="radiogroup">
           <label for="radio01">Strongly Agree</label>
           <input id="radio02" type="radio" value="2" name="radiogroup">
@@ -70,9 +75,23 @@
           <input id="radio03" type="radio" value="3" name="radiogroup">
           <label for="radio03">Strongly Disagree</label>
         </div>
-
+  
         <div class="form-group">
-          <label id="radiogroup-label-02" for="radiogroup">The Earth is spherical.</label>
+          <p>The Earth is spherical.</p>
+          <input id="radio01" type="radio" value="1" name="radiogroup">
+          <label for="radio01">Strongly Agree</label>
+           <input id="radio02" type="radio" value="2" name="radiogroup">
+           <label for="radio02">Agree</label>
+           <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Neutral</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Disagree</label>
+          <input id="radio03" type="radio" value="3" name="radiogroup">
+          <label for="radio03">Strongly Disagree</label>
+        </div>
+  
+        <div class="form-group">
+          <p>Climate change is real.</p>
           <input id="radio01" type="radio" value="1" name="radiogroup">
           <label for="radio01">Strongly Agree</label>
           <input id="radio02" type="radio" value="2" name="radiogroup">
@@ -84,9 +103,9 @@
           <input id="radio03" type="radio" value="3" name="radiogroup">
           <label for="radio03">Strongly Disagree</label>
         </div>
-
+  
         <div class="form-group">
-          <label id="radiogroup-label-03" for="radiogroup">Climate change is real.</label>
+          <p>Humans and monkeys have a common ancestor.</p>
           <input id="radio01" type="radio" value="1" name="radiogroup">
           <label for="radio01">Strongly Agree</label>
           <input id="radio02" type="radio" value="2" name="radiogroup">
@@ -98,9 +117,9 @@
           <input id="radio03" type="radio" value="3" name="radiogroup">
           <label for="radio03">Strongly Disagree</label>
         </div>
-
+  
         <div class="form-group">
-          <label id="radiogroup-label-04" for="radiogroup">Humans and monkeys have a common ancestor.</label>
+          <p>Vaccines work and are safe.</p>
           <input id="radio01" type="radio" value="1" name="radiogroup">
           <label for="radio01">Strongly Agree</label>
           <input id="radio02" type="radio" value="2" name="radiogroup">
@@ -112,38 +131,24 @@
           <input id="radio03" type="radio" value="3" name="radiogroup">
           <label for="radio03">Strongly Disagree</label>
         </div>
-
-        <div class="form-group">
-          <label id="radiogroup-label-05" for="radiogroup">Vaccines work and are safe.
-          <input id="radio01" type="radio" value="1" name="radiogroup">
-          <label for="radio01">Strongly Agree</label>
-          <input id="radio02" type="radio" value="2" name="radiogroup">
-          <label for="radio02">Agree</label>
-          <input id="radio03" type="radio" value="3" name="radiogroup">
-          <label for="radio03">Neutral</label>
-          <input id="radio03" type="radio" value="3" name="radiogroup">
-          <label for="radio03">Disagree</label>
-          <input id="radio03" type="radio" value="3" name="radiogroup">
-          <label for="radio03">Strongly Disagree</label>
-        </label>
-        </div>
-        
+          
         <div class="form-group">
           <label id="textarea-label" for="textarea">If you have any doubts or sugestions you can send us a message.</label>
           <textarea id="textarea" name="textarea" placeholder="Enter your message..."></textarea>
         </div>
-        
+          
         <div class="form-group">
-          <label id="checkboxes-label" for="checkboxes">Checkboxes</label>
+          <label id="checkboxes-label" for="checkboxes"></label>
           <input id="checkbox01" type="checkbox" value="1" name="checkboxes">
-          <label for="checkbox01">CheckBox01</label>
-          <input id="checkbox02" type="checkbox" value="2" name="checkboxes">
-          <label for="checkbox02">CheckBox02</label>
+          <label for="checkbox01">I have read and agreed to the <a href="#">Privacy Policy</a>.</label>
+          <input id="checkbox01" type="checkbox" value="2" name="checkboxes">
+          <label for="checkbox01">Subscribe to our newsletter.</label>
         </div>
-
+  
         <div class="form-group">
           <button id="submit" type="submit">Submit</button>
         </div>
       </form>
-    </body>
-  </html>
+    </div>
+  </body>
+</html>
