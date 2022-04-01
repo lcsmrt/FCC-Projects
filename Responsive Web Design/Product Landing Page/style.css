@@ -3,13 +3,17 @@
 }
 
 nav {
-    display: flex;
     position: sticky;
     top: 0;
 }
 
-.logo {
-    width: 60vw;
+.nav-container {
+    display: flex;
+}
+
+.logo-img {
+    width: 10vw;
+    height: 5vh;
 }
 
 nav ul {
