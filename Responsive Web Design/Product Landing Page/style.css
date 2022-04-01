@@ -2,13 +2,20 @@
     box-sizing: border-box;
 }
 
-header {
+nav {
     display: flex;
-    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 60vw;
 }
 
 nav ul {
+    width: 35vw;
     display: flex;
+    justify-content: space-around;
 }
 
 li {
