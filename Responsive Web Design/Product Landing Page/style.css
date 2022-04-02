@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 nav {
@@ -9,6 +10,10 @@ nav {
 
 .nav-container {
     display: flex;
+}
+
+.logo {
+    width: 50vw;
 }
 
 .logo-img {
@@ -24,4 +29,39 @@ nav ul {
 
 li {
     list-style: none;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "left right"
+    "left right";
+}
+
+#header {
+    font-size: 4.5em;
+}
+
+#hero h2 {
+    font-family: 'Barlow', sans-serif;
+}
+
+#header-img {
+    grid-area: right;
+    width: 45vw;
+    height: 60vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+    max-width: 35vw;
 }
