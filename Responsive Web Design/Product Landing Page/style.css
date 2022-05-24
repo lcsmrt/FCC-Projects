@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    padding: 0;
 }
 
 nav {
@@ -40,7 +41,7 @@ li {
     "left right";
 }
 
-#header {
+#title {
     font-size: 4.5em;
 }
 
@@ -59,6 +60,27 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#features {
+    display: flex;
+}
+
+#how-it-works {
+    display: flex;
+}
+
+#pricing {
+    display: flex;
+}
+
+.pack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5vw;
+    margin: 0 1vw;
+    border: 1px solid black;
 }
 
 video {

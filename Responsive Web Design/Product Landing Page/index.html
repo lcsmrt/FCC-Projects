@@ -13,33 +13,80 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <nav id="nav-bar">
         <div class="nav-container">
           <a class="logo" rel="home" href="#">
             <img class="logo-img" src="https://github.com/lcsmrt/FCC-Projects/blob/main/Responsive%20Web%20Design/Product%20Landing%20Page/Images/notexture.png?raw=true" alt="">
           </a>
           <ul>
-            <li class="nav-link" href="#">FEATURES</li>
-            <li class="nav-link" href="#">HOW IT WORKS</li>
-            <li class="nav-link" href="#">ABOUT MY DOGS</li>
+            <li class="nav-link" href="#features">FEATURES</li>
+            <li class="nav-link" href="#how-it-works">HOW IT WORKS</li>
+            <li class="nav-link" href="#pricing">PRICING</li>
           </ul>
         </div>
       </nav>
 
       <section id="hero">
-        <h1 id="header">DO YOU LOVE DOGS? <br>YES YOU DO!</h1>
+        <h1 id="title">DO YOU LOVE DOGS? <br>YES YOU DO!</h1>
         <h2>Doggo ipsum lotsa pats dat tungg tho woofer noodle horse what a nice floof, borkdrive yapper long water shoob. Doggo extremely cuuuuuute boof blop noodle horse most angery pupper I have ever seen, pupperino adorable doggo stop it fren heck.</h2>
         <img id="header-img" src="https://github.com/lcsmrt/FCC-Projects/blob/main/Responsive%20Web%20Design/Product%20Landing%20Page/Images/notexture.png?raw=true" alt="">
       </section>
     </header>
 
     <section id="content">
+      <h2>FEATURES</h2>
+      <section id="features">
+      </section>
+
+      <h2>HOW IT WORKS</h2>
+      <section id="how-it-works">
+      </section>
+
+      <h2>PRICING</h2>
+      <section id="pricing">
+        <div class="pack">
+          <h3 class="pack-name">BASIC</h3>
+          <h3 class="pack-price">FREE</h3>
+          <ul>
+            <li>Feature 01</li>
+            <li>Feature 02</li>
+            <li>Feature 03</li>
+            <li>Feature 04</li>
+          </ul>
+          <button class="pack-button">Select</button>
+        </div>
+        <div class="pack">
+          <h3 class="pack-name">PLUS</h3>
+          <h3 class="pack-price">FREE</h3>
+          <ul>
+            <li>Feature 01</li>
+            <li>Feature 02</li>
+            <li>Feature 03</li>
+            <li>Feature 04</li>
+          </ul>
+          <button class="pack-button">Select</button>
+        </div>
+        <div class="pack">
+          <h3 class="pack-name">PREMIUM</h3>
+          <h3 class="pack-price">FREE</h3>
+          <ul>
+            <li>Feature 01</li>
+            <li>Feature 02</li>
+            <li>Feature 03</li>
+            <li>Feature 04</li>
+          </ul>
+          <button class="pack-button">Select</button>
+        </div>
+      </section>
+
       <h2>NOT CONVINCED YET? WATCH THE VIDEO BELOW:</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ep8kFcUg8oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <form id="form">
-        <input id="email" type="email" placeholder="Enter your email..." required>
-        <input id="submit" type="submit" value="I want to see cute dogs!">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ep8kFcUg8oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <h2>WANNA RECIEVE DOG PICTURES FOR NO PARTICULAR REASON?</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" name="email" type="email" placeholder="Enter your email..." required>
+        <input id="submit" type="submit" value="SEND ME DOG PICS!">
       </form>
     </section>
   </body>
