@@ -6,6 +6,8 @@
 
 body {
     margin: 0;
+    background-color: #f5f5ff;
+    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
 
 nav {
@@ -48,21 +50,26 @@ li {
     "left right"
     "left right";
     margin-top: 5%;
-    margin-left: 2%;
 }
 
 #title {
-    font-size: 4.5em;
+    font-size: 4em;
+    margin-left: 5%;
+    margin-right: 2%;
 }
 
 #hero h2 {
     font-family: 'Barlow', sans-serif;
+    font-size: 1.6em;
+    margin-left: 5%;
+    margin-right: 2%;
 }
 
 #header-img {
     grid-area: right;
     width: 40vw;
     max-height: 80vh;
+    margin: 3%;
 }
 
 #content {
