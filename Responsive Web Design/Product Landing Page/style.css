@@ -39,6 +39,8 @@ li {
     grid-template-areas: 
     "left right"
     "left right";
+    margin-top: 5%;
+    margin-left: 2%;
 }
 
 #title {
